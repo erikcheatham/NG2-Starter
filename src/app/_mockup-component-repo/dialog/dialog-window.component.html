@@ -1,0 +1,36 @@
+<h2 md-dialog-title>We need a little information about you</h2>
+
+<div md-dialog-description>
+	<aside>Please provide us with a little more information about you and we'll let you save and download a PDF summary of your code assessment.  Before submitting, also indicate if you're ready to speak with a local building science expert about your project.</aside>
+
+	<fieldset>
+	
+		<div class="flex-container" fxLayout="row" fxLayoutAlign="space-between stretch">
+			<md-input fxFlex="49" placeholder="First Name" maxlength="50" required></md-input>
+			<md-input fxFlex="49" placeholder="Last Name" maxlength="50" required></md-input>
+		</div>
+
+		<div class="flex-container" fxLayout="row" fxLayoutAlign="space-between stretch">
+			<md-input fxFlex="49" placeholder="Email" maxlength="50" required></md-input>
+			<md-input fxFlex="49" placeholder="Company Name" maxlength="50" required></md-input>
+		</div>
+		
+		<div class="flex-container" fxLayout="row" fxLayoutAlign="space-between stretch">
+			<md-input fxFlex="49" placeholder="Country" maxlength="50" required></md-input>
+			<md-input fxFlex="49" placeholder="State / Province" maxlength="50" required></md-input>
+		</div>
+			
+		<div class="flex-container" fxLayout="row" fxLayoutAlign="start start">
+			<md-checkbox fxFlex="50">
+				Please have a Dow expert contact me regarding this project.
+			</md-checkbox>
+		</div>
+		<div class="flex-container" fxLayout="row" fxLayoutAlign="start start">
+			<md-checkbox fxFlex="50">
+				Please sign me up for additional Dow Building Solutions Communications.
+			</md-checkbox>
+		</div>
+	</fieldset>
+</div>
+
+<button md-raised-button color="primary" (click)="dialogRef.close('yes')">Submit</button>

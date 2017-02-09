@@ -1,0 +1,142 @@
+.input-group__select2 {
+	
+	label {
+		position       : absolute;
+		top            : 7px;
+		left           : 0;
+		z-index        : 1;
+		transition     : 0.2s ease-out;
+		pointer-events : none;
+		color          : $gray-light;
+		
+		@at-root .active#{&} {
+			transform : translateY(-140%);
+			display   : inherit;
+			color     : md-color($fire-app-primary);
+			font-size : 75%;
+		}
+		
+		@at-root .filled#{&} {
+			color: inherit;
+		}
+	}
+
+	.select2-wrapper {
+		margin : 5px 0;
+		left   : 25px;
+		right  : 25px;
+		top    : 25px;
+		
+		select {
+			width: 100%;
+			
+			&.ng-invalid.validation-error {
+				
+				+ .select2 {
+					
+					.selection .select2-selection--multiple ul.select2-selection__rendered {
+						border-color: md-color($fire-app-primary);
+					}
+				}
+			}
+		}
+		
+		> select2 {
+			width: 100%;
+		}
+	}
+}
+
+.select2 {
+	
+	.selection {
+		
+		.select2-selection {
+			border        : none;
+			
+			&--multiple {
+				border     : 0;
+				background : none;
+				
+				@at-root .select2-container--focus#{&} {
+					border: 0;
+					
+					ul.select2-selection__rendered {
+						border-color        : md-color($fire-app-primary);
+						border-bottom-width : 2px;
+					}
+				}
+				
+				ul.select2-selection__rendered {
+					border-bottom : 1px solid rgba(0, 0, 0, 0.12);
+					padding-left  : 0;
+					@include line-height(20px);
+					
+					li.select2-selection__choice {
+						margin-top : 0;
+						background : rgba(0, 0, 0, 0.10);
+						border     : none;
+						padding    : 1px 5px;
+					}
+				}
+			}
+		}
+	}
+	
+	&-container {
+		
+		/* active state */
+		&--focus ~ .bar:before, 
+		&--focus ~ .bar:after,
+		&--open ~ .bar:before, 
+		&--open ~ .bar:after {
+			width: 50%;
+		}
+		
+		*:focus {
+			outline: none;
+		}
+	}	
+}
+
+span.select2-container {
+	
+	.select2-dropdown--below {
+		margin-top: 10px;
+	}
+	
+	&--open {
+		
+		.select2-dropdown {
+			box-shadow : 0 6px 20px rgba(0, 0, 0, 0.19), 0 8px 17px rgba(0, 0, 0, 0.2);
+			border     : 1px solid #eee;
+			
+			.select2-search--dropdown {
+				box-shadow    : 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 5px rgba(0, 0, 0, 0.26);
+				width         : 95%;
+				margin        : 10px auto;
+				border-radius : 1px;
+				
+				input {
+					border-radius: 1px;
+				}
+			}
+		}
+		
+		.select2-results__options {
+			
+			.select2-results__option {
+				padding : 10px 16px 16px 10px;
+				color   : black;
+				
+				&[aria-selected="true"] {
+					background-color: Silver;
+				}
+				
+				&--highlighted {
+					background-color: Gainsboro;
+				}
+			}
+		}
+	}
+}

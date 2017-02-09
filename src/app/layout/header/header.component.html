@@ -1,0 +1,42 @@
+<md-sidenav class="header__sidenav" #sidenav mode="push">
+
+	<button id="sidenav-close" md-fab (click)="sidenav.close()">
+		<md-icon>clear</md-icon>
+	</button>
+	
+	<h3>Navigate</h3>
+	
+	<hr />
+	
+	<md-nav-list class="md-nav-list">
+		<md-list-item [routerLink]="['/mockup-components']" [routerLinkActive]="['active']" (click)="sidenav.close()">
+			<md-icon>extension</md-icon>
+			<p>Theme Components</p>
+		</md-list-item>
+		
+		<hr class="dashed" />
+		
+		<h4>Development Tests</h4>
+		<md-list-item [routerLink]="['/']" [routerLinkActive]="['active']" (click)="sidenav.close()">
+			<md-icon>label</md-icon>
+			<p>Home</p>
+		</md-list-item>
+	</md-nav-list>
+</md-sidenav>
+
+<div class="header__content">
+	<md-toolbar color="primary">
+		<button class="material-button" (click)="sidenav.toggle()">
+			<md-icon>menu</md-icon>
+		</button>
+		
+		<img class="dow-logo-image" src="assets/DOWdiamond-CMYK.png" />
+		
+		<md-nav-list class="md-nav-list">
+			<md-list-item [routerLink]="['/']" [routerLinkActive]="['active']">
+				<p>NG2-Starter</p>
+			</md-list-item>
+		</md-nav-list>
+
+	</md-toolbar>
+</div>

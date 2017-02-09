@@ -1,0 +1,17 @@
+md-input {
+
+	.md-input-wrapper {
+		margin: 7px 0;
+	}
+	
+	&.validation-error {
+		
+		label.md-input-placeholder {
+
+		}
+		
+		.md-input-underline {
+			border-color: md-color($fire-app-primary);
+		}
+	}
+}

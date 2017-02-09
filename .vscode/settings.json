@@ -1,0 +1,26 @@
+{
+	"typescript.tsdk": "./node_modules/typescript/lib",
+	"editor.insertSpaces": false,
+	"editor.detectIndentation":false,
+	"editor.tabSize": 4,
+	"alignment.chars": {
+		"from": {
+			"spaceBefore": 1,
+			"spaceAfter": 1
+		},
+		"=": {
+			"spaceBefore": 1,
+			"spaceAfter": 1
+		},
+		":": {
+			"spaceBefore": 1,
+			"spaceAfter": 1
+		},
+		"?": {
+			"spaceBefore": 1,
+			"spaceAfter": 1
+		}
+
+	}
+
+}

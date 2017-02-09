@@ -1,0 +1,20 @@
+<div class="flex-container" fxLayout="row" fxLayoutAlign="center center">
+	
+	<div class="flex-item" fxFlex="80">
+		<h1>Mockup Components</h1>
+
+		<md-card>
+
+			<button md-raised-button [routerLink]="['palette']" [routerLinkActive]="['active']">
+				<p>Palette</p>
+			</button>
+			
+			<button md-raised-button [routerLink]="['dialog']" [routerLinkActive]="['active']">
+				<p>Dialog</p>
+			</button>
+				
+		</md-card>
+
+		<router-outlet></router-outlet>
+	</div>
+</div>

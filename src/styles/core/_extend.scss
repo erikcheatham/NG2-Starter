@@ -1,0 +1,22 @@
+.color {
+	&--red {
+		@at-root &.color__background {
+			background-color: $red;
+		}
+	}
+	&--gray-dark {
+		@at-root &.color__background {
+			background-color: $gray-dark;
+		}
+	}
+	&--gray {
+		@at-root &.color__background {
+			background-color: $gray;
+		}
+	}
+	&--gray-light {
+		@at-root &.color__background {
+			background-color: $gray-light;
+		}
+	}
+}

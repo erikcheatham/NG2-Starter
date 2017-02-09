@@ -1,0 +1,13 @@
+md-sidenav {
+	
+	&.md-sidenav-push {
+		min-width: 200px;
+		
+		.md-sidenav-focus-trap {
+			
+			> .cdk-focus-trap-content {
+				overflow: visible;
+			}
+		}
+	}
+}

@@ -1,0 +1,42 @@
+/* 
+	Base styles on body, main, and others which are
+	not included in the app as components.
+*/
+
+html, body { 
+	height : 100%;
+	margin : 0;
+}
+
+$footer-height: 75px;
+
+body {
+	background-color : $white;
+	
+	#container {
+		
+		#content-shim {
+			height         : 100%;
+			min-height     : 100%;
+			margin-bottom  : -$footer-height;
+			padding-bottom : $footer-height;
+
+			&:after {
+				content : '';
+				display : block;
+				height  : $footer-height;
+			}
+			
+			#header {
+				padding-bottom: 2rem;
+			}
+		}
+
+		#footer {
+			height        : $footer-height - 5; // border is additional to height
+			position      : relative;
+			z-index       : 1;
+			border-bottom : 5px solid $red;
+		}
+	}
+}

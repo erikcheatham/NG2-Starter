@@ -1,0 +1,26 @@
+ul {
+	
+	&.list-inline {
+		
+		> li {
+			display: inline;
+		}
+		
+		&--comma-delimited {
+			
+			> li {
+				
+				&:after {
+					content: ', ';
+				}
+				
+				&:last-child {
+					
+					&:after {
+						content: '';
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,70 @@
+@import '~styles/helpers';
+
+.header__sidenav {
+	padding: 76px 20px;
+	
+	#sidenav-close {
+		position : absolute;
+		top      : -76px; // 56 for icon + 20 padding
+		right    : -48px; // 56 / 2 + 20 padding
+		@include transition(right 350ms);
+	}
+	
+	&.md-sidenav-closing {
+		
+		#sidenav-close {
+			right: 0;
+		}
+	}
+	
+	.md-nav-list {
+		
+		md-icon {
+			padding-right: 1rem;
+			color: $gray;
+			@include transition(color 250ms);
+		}
+		
+		.active {
+			md-icon {
+				color: $red;
+			}
+		}
+	}
+}
+
+.header__content {
+	
+	.md-primary {
+		padding-left: 10%;
+		
+		.material-button {
+			padding: 0 2rem 0 0;	
+		}
+		
+		.dow-logo-image {
+			height : 64px;
+			width  : auto;
+		}
+	}
+	
+	.md-nav-list {
+		padding-top : 0;
+		margin-left : 1rem;
+		
+		md-list-item {
+			
+			&.active {
+				
+				p {
+					color: $red;
+				}
+			}
+			
+			p {
+				color       : $gray-darker;
+				font-weight : bold;
+			}
+		}
+	}
+}

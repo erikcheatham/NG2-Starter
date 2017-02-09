@@ -1,0 +1,20 @@
+md-select {
+	
+	&.validation-error {
+		
+		.md-select-trigger {
+			border-bottom : 1px solid md-color($fire-app-primary);
+			
+			.md-select-arrow {
+				color: inherit;
+			}
+		}
+	}
+	
+	// Color reset to match with inputs
+	&.ng-invalid.ng-touched:not(.md-select-disabled) {
+		.md-select-trigger {
+			color: rgba(0, 0, 0, 0.38);
+		}
+	}
+}

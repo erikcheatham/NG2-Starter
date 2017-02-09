@@ -1,0 +1,16 @@
+hr {
+	border-color     : transparent;
+	border-top-color : $gray-light;
+	
+	&.dashed {
+		border-top: 1px dashed $gray;
+	}
+}
+
+.separator__vertical {
+	border-left : 3px solid $gray-light;
+	
+	&--red {
+		border-left-color: $red;
+	}
+}

@@ -1,0 +1,25 @@
+form {
+	
+	.validation-container {
+		position: relative;
+		
+		small.validation-error-message {
+			position   : absolute;
+			top        : 100%;
+			left       : 1px; // from the italics, makes it look further left than it is
+			color      : md-color($fire-app-primary);
+			font-style : italic;
+			@include font-size(10px);
+			
+			b {
+				display: block;
+			}
+		}
+		
+		// fxFlex to be set on the validaiton container, so this should be as if it were the validation container size
+		md-select,
+		md-input {
+			width: 100%;
+		}
+	}
+}

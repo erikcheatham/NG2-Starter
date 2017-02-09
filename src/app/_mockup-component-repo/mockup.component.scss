@@ -1,0 +1,12 @@
+@import '~styles/_helpers';
+
+md-card {
+			
+	> button {
+		
+		&.active {
+			background-color : $red;
+			color            : $white;
+		}
+	}
+}

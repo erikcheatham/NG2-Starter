@@ -1,0 +1,13 @@
+/* ------- Imports ------- */
+
+// Localized variables / mixins / functions
+@import './_helpers';
+
+// Vendor theme
+@import './_theme';
+@import './theme/_select2.theme';
+
+// Core styles
+@import './_core';
+
+/* ------- Global styles ------- */

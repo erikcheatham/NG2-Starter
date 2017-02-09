@@ -1,0 +1,22 @@
+@import '~@angular/material/core/theming/all-theme';
+@include md-core();
+
+// Defining an style theme for your app https://github.com/angular/material2/blob/master/guides/theming.md
+// Defining themes for your components https://github.com/angular/material2/blob/master/guides/theming-your-components.md
+
+// Define the palettes for your theme using the Material Design palettes 
+// available in @angular/material/core/theming/_palette.scss
+$fire-app-primary : md-palette($md-red, A200, A50, A400);
+$fire-app-accent  : md-palette($md-amber, A200, A100, A400);
+$fire-app-warn    : md-palette($md-red);
+
+// If you add new variables, make sure to add them to the theme below!
+$fire-app-theme: md-light-theme(
+    $fire-app-primary,
+    $fire-app-accent,
+    $fire-app-warn
+);
+
+@include angular-material-theme($fire-app-theme);
+
+@import './theme/_overrides';
