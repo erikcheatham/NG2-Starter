@@ -42,8 +42,21 @@ This project was generated with [angular-cli](https://github.com/angular/angular
     git clone https://dow-vsts.visualstudio.com/Market%20Sell/_git/NG2-Starter
     ``
 3.  Navigate to the newly created 'NG2-Starter' directory
-4.  If you're looking to use this template as a starting point for a new project, you will need to point git at your actual project branch origin.
+4.  If you're looking to use this template as a starting point for a new project, you will need to point git at your actual project branch origin. To do this, run the following command to remove existing remote origins
 
+    ``
+    git remote rm origin
+    ``
+6.  Now, set your new origin with the following command
+
+    ``
+    git remote add origin [Insert URL to VSTS GIT Repo]
+    ``
+7.  Lastly, Push the NG2-Starter code to your new repository
+
+    ``
+    git push -u origin --all
+    ``
 
 ### Update npm
 
